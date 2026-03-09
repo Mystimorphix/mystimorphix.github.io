@@ -100,6 +100,8 @@
 \newcommand{\resumeItemListStart}{\begin{itemize}}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 
+\newcommand{\negvspace}{\vspace{-5mm}}
+
 %-------------------------------------------
 %%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -120,19 +122,21 @@
 \end{center}
 
 %-----------EDUCATION-----------
+\negvspace
 \section{Education}
   \resumeSubHeadingListStart
     \resumeSubheading
-      {Rice University}{Houston, TX}
-      {Bachelor of Science in Computer Science, GPA 3.94/4.0}{Aug 2023 -- May 2027}
-
-      \vspace{2mm}
-
-      Relevant Coursework: Game Design, Data Structures and Algorithms, Discrete Mathematics, Computer Engineering, Computer Organization, Neuroengineering, Honors Linear Algebra
+      {Rice University}{Aug 2023 -- May 2027}
+      {Bachelor of Science in Computer Science, GPA 3.94/4.0}{Houston, TX}
+    \resumeItemListStart
+      \resumeItem{\textbf{Relevant Coursework}: Game Design, Data Structures and Algorithms, Concurrent Programming, Object-Oriented Design, Computer Engineering, Computer Architecture, Neuroengineering}
+      \resumeItem{\textbf{Awards \& Honors}: Data Mentoring 2nd Place (2025), President's Honor Roll (2023/2024), Data Showcase 1st Place (2023), Certificate for Excellence in Technology Education (2023), Franklin Scholarship (2023-2024)}
+    \resumeItemListEnd
   \resumeSubHeadingListEnd
 
 %-----------EXPERIENCE-----------
-\section{Experience}
+\negvspace
+\section{Professional Experience}
   \resumeSubHeadingListStart
 
     % -----------Multiple Positions Heading-----------
@@ -146,63 +150,65 @@
     %-------------------------------------------
 
     \resumeSubheading
-      {Computational Biology Research Assistant}{Jun 2024 -- Present}
+      {Computational Biology Researcher}{Jun 2024 -- Present}
       {Baylor College of Medicine}{Houston, TX}
       \resumeItemListStart
-        \resumeItem{Design and implement a multi-stage data processing pipeline using Python and Shell Script used by 10 professors and researchers to process millions of lines of data.}
-        \resumeItem{Optimize pipeline runtime by executing independent stages concurrently, reducing end-to-end runtime.}
-        \resumeItem{Add validation and logging to support repeated execution and debugging across datasets.}
-        \resumeItem{Collaborate in weekly sprint-style lab meetings using Agile workflows and present results to 100+ technical and non-technical audiences.}
-    \resumeItemListEnd
+        \resumeItem{Designed and implemented a multi-stage data processing pipeline to analyze millions of lines of uncharacterized data for 800+ proteins using Python and Bash script.}
+        \resumeItem{Optimized data analysis runtime by 50\% by introducing SLURM-based parallel job scheduling and concurrency optimization on an HPC cluster.}
+        \resumeItem{Developed an interactive protein-to-genome relationship visualization platform using Flask to improve workflow for 10 professors and researchers.}
+        \resumeItem{Collaborated in weekly Agile-style research sprints and presented technical findings to audiences of 100+ researchers and interdisciplinary stakeholders.}
+      \resumeItemListEnd
 
     \resumeSubheading
       {Machine Learning Research Assistant}{Jan 2024 -- Present}
       {Baylor College of Medicine}{Houston, TX}
       \resumeItemListStart
-        \resumeItem{Develop a semi-supervised machine learning algorithm using Python scikit-learn improving classification efficiency by 100\% in brain structure characterization.}
-        \resumeItem{Process electrical stimulation data using Python from over 50 epilepsy patients to analyze brain connectivity.}
+        \resumeItem{Developed a semi-supervised machine learning algorithm using Python scikit-learn, improving brain structure classification efficiency by 100\%.}
+        \resumeItem{Enhanced classification accuracy by 15\% by designing a novel estimation and flood-filling algorithm.}
       \resumeItemListEnd
 
     \resumeSubheading
-      {Teaching Assistant}{Aug 2024 -- May 2025}
+      {Peer Tutor}{Aug 2024 -- May 2025}
       {Rice University}{Houston, TX}
       \resumeItemListStart
-        \resumeItem{Led a team of 50 TAs to organize an interactive, campus-wide treasure hunt to demonstrate the A-Star algorithm to students.}
-        \resumeItem{Mentored over 300 students during office hours on concepts like Markov chains, graph search algorithms, and predictive model fitting.}
+        \resumeItem{Led a team of 50 TAs to organize a campus-wide interactive simulation bringing the A-star algorithm to life, turning it into a hands-on learning experience for students.}
+        \resumeItem{Mentored over 300 students during office hours on concepts including Markov chains, graph search algorithms, and predictive model fitting.}
       \resumeItemListEnd
 
     \resumeSubheading
       {Software Developer}{Jan 2024 -- Apr 2024}
       {American Medical Women's Association}{Houston, TX}
       \resumeItemListStart
-        \resumeItem{Implemented full-stack features using HTML/CSS/JavaScript to display personalized healthcare options.}
-        \resumeItem{Led the creation of a patient-tailored questionnaire by collaborating with a panel of 5 physicians.}
-        \resumeItem{Reached college students nationwide through Fox 26 Houston.}
+        \resumeItem{Optimized physician lookup times by 20\% by implementing a server-side database caching system.}  
+        \resumeItem{Developed a personalized recommendation system for healthcare learning modules using HTML, CSS, JavaScript, and database caching to improve user experience.}
+        \resumeItem{Contributed to a platform later featured on Fox 26 Houston and ABC 13, expanding reach to college students nationwide.}
       \resumeItemListEnd
 
   \resumeSubHeadingListEnd
 
 %-----------PROJECTS-----------
+\negvspace
 \section{Projects}
     \resumeSubHeadingListStart
       \resumeProjectHeading
-          {\textbf{AI-Driven Narrative Game} $|$ \emph{Godot, Google AI Studio}}{Nov 2025 -- Present}
+          {\textbf{AI-Driven Narrative Game} $|$ \emph{Godot, Google AI Studio} $|$ \href{https://github.com/Daphne-Qin/oh-the-places-youll-go}{\underline{GitHub}}}{Nov 2025 -- Present}
           \resumeItemListStart
-            \resumeItem{Design and implement a modular game system integrating AI-generated character dialogue with player-driven narrative state using Godot and custom Google AI integration.}
-            \resumeItem{Build persistent dialogue memory, state tracking, and rule-based safety constraints to ensure deterministic, coherent character behavior across gameplay sessions.}
-            \resumeItem{Engineer a low-latency interaction pipeline separating game logic from AI services, improving responsiveness and maintainability.}
+            \resumeItem{Designed and implemented a modular game system integrating AI-generated character interactions with player-driven narrative state using Godot and custom Google AI integration.}
+            \resumeItem{Built persistent dialogue memory, state tracking, and rule-based safety constraints to ensure deterministic, coherent character behavior across gameplay sessions.}
+            \resumeItem{Engineered a low-latency signaling pipeline that parses AI-generated keywords to trigger in-game animations, decoupling game logic from AI services and improving responsiveness.}
           \resumeItemListEnd
     \resumeSubHeadingListEnd
 
 %-----------PROGRAMMING SKILLS-----------
+\negvspace
 \section{Technical Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-     \textbf{Languages}{: Java, Python, C, C++, SQLite, JavaScript, TypeScript, HTML/CSS, Shell} \\
-     \textbf{Frameworks}{: RESTful API, Flask, JUnit, Cypress} \\
+      \textbf{Presentation}{: Public Speaking, Conflict Management (Doerr Institute Workshop)} \\
+     \textbf{Languages}{: Proficient in Python, Java, C, C++; Familiar with JavaScript, TypeScript, HTML/CSS, Shell, SQLite} \\
+     \textbf{Frameworks}{: REST APIs, Flask, JUnit, Cypress} \\
      \textbf{Developer Tools}{: Git, Google AI Studio, VS Code, Visual Studio, PyCharm, IntelliJ, Godot} \\
      \textbf{Libraries}{: Pandas, NumPy, MatPlotLib, scikit-learn}
     }}
  \end{itemize}
-
 \end{document}
