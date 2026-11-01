@@ -44,8 +44,8 @@
 \addtolength{\oddsidemargin}{-0.5in}
 \addtolength{\evensidemargin}{-0.5in}
 \addtolength{\textwidth}{1in}
-\addtolength{\topmargin}{-.5in}
-\addtolength{\textheight}{1.0in}
+\addtolength{\topmargin}{-0.5in}
+\addtolength{\textheight}{1in}
 
 \urlstyle{same}
 
@@ -55,8 +55,8 @@
 
 % Sections formatting
 \titleformat{\section}{
-  \vspace{-4pt}\scshape\raggedright\large
-}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+  \vspace{-2pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-7pt}]
 
 % Ensure that generate pdf is machine readable/ATS parsable
 \pdfgentounicode=1
@@ -70,8 +70,8 @@
 }
 
 \newcommand{\resumeSubheading}[4]{
-  \vspace{-2pt}\item
-    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.993\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
       \textit{\small#3} & \textit{\small #4} \\
     \end{tabular*}\vspace{-7pt}
@@ -79,14 +79,14 @@
 
 \newcommand{\resumeSubSubheading}[2]{
     \item
-    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    \begin{tabular*}{0.993\textwidth}{l@{\extracolsep{\fill}}r}
       \textit{\small#1} & \textit{\small #2} \\
     \end{tabular*}\vspace{-7pt}
 }
 
 \newcommand{\resumeProjectHeading}[2]{
     \item
-    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    \begin{tabular*}{0.993\textwidth}{l@{\extracolsep{\fill}}r}
       \small#1 & #2 \\
     \end{tabular*}\vspace{-7pt}
 }
@@ -95,10 +95,10 @@
 
 \renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
 
-\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.05in, label={}]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
-\newcommand{\resumeItemListStart}{\begin{itemize}}
-\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.2in, itemsep=2pt]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-7pt}}
 
 \newcommand{\negvspace}{\vspace{-5mm}}
 
@@ -115,8 +115,8 @@
 % \end{tabular*}
 
 \begin{center}
-    \textbf{\Huge \scshape Daphne Qin} \\ \vspace{1pt}
-    \small 347-348-1281 $|$ \href{mailto:daphne.qin@rice.edu}{\underline{daphne.qin@rice.edu}} $|$ 
+    \textbf{\huge \scshape Daphne Qin} \\ \vspace{1pt}
+    \small \href{tel:+1 347-348-1281}{\underline{+1 347-348-1281}} $|$ \href{mailto:daphne.qin@rice.edu}{\underline{daphne.qin@rice.edu}} $|$ 
     \href{https://www.linkedin.com/in/daphne-qin/}{\underline{linkedin.com/in/daphne-qin/}} $|$
     \href{https://github.com/daphne-qin}{\underline{github.com/daphne-qin}}
 \end{center}
@@ -127,10 +127,10 @@
   \resumeSubHeadingListStart
     \resumeSubheading
       {Rice University}{Aug 2023 -- May 2027}
-      {Bachelor of Science in Computer Science, GPA 3.94/4.0}{Houston, TX}
+      {Bachelor of Science in Computer Science, GPA 3.8/4.0}{Houston, TX}
     \resumeItemListStart
       \resumeItem{\textbf{Relevant Coursework}: Game Design, Data Structures and Algorithms, Concurrent Programming, Object-Oriented Design, Computer Engineering, Computer Architecture, Neuroengineering}
-      \resumeItem{\textbf{Awards \& Honors}: Data Mentoring 2nd Place (2025), President's Honor Roll (2023/2024), Data Showcase 1st Place (2023), Certificate for Excellence in Technology Education (2023), Franklin Scholarship (2023-2024)}
+      \resumeItem{\textbf{Awards \& Honors}: Tau Beta Pi (2026), Data Mentoring 2nd Place (2025), President's Honor Roll (2023/2024), Data Showcase 1st Place (2023), Certificate for Excellence in Technology (2023), Franklin Scholarship (2023-2024)}
     \resumeItemListEnd
   \resumeSubHeadingListEnd
 
@@ -150,17 +150,27 @@
     %-------------------------------------------
 
     \resumeSubheading
-      {Computational Biology Researcher}{Jun 2024 -- Present}
-      {Baylor College of Medicine}{Houston, TX}
+      {Active Safety Simulation Developer}{May 2026 -- Aug 2026}
+      {General Motors}{Warren, MI}
       \resumeItemListStart
-        \resumeItem{Designed and implemented a multi-stage data processing pipeline to analyze millions of lines of uncharacterized data for 800+ proteins using Python and Bash script.}
-        \resumeItem{Optimized data analysis runtime by 50\% by introducing SLURM-based parallel job scheduling and concurrency optimization on an HPC cluster.}
-        \resumeItem{Improved workflow for 10 professors and researchers, cutting cycle time by 20\%, by developing interactive protein-to-genome relationship visualization platform using Flask.}
-        \resumeItem{Collaborated in weekly Agile-style research sprints and presented technical findings to audiences of 100+ researchers and interdisciplinary stakeholders.}
+        \resumeItem{Pioneered a pipeline that automatically generates isolated subset models of any car's active safety controller in under 10 seconds.}
+        \resumeItem{Extended in-house simulation scripting language by implementing parsing in C for test groups and boolean logic, thus enhancing regression testing workflows aiding over 60 lead calibrators and software developers in active safety teams.}
+        \resumeItem{Shipped software releases ahead of schedule by 3 weeks using Agile-style methodology.}
       \resumeItemListEnd
 
     \resumeSubheading
-      {Machine Learning Research Assistant}{Jan 2024 -- Present}
+      {Computational Biology Researcher}{Jun 2024 -- May 2026}
+      {Baylor College of Medicine}{Houston, TX}
+      \resumeItemListStart
+        \resumeItem{\href{https://www.biorxiv.org/content/10.64898/2026.07.06.731365v1.full}{Co-author and contributor to the latest paper by the ENCODE consortium, to be published by \textbf{\textit{Nature}} in 2026.}}
+        \resumeItem{Designed and implemented a multi-stage data processing pipeline to analyze millions of lines of uncharacterized data across over 800 proteins using Python and Bash script.}
+        \resumeItem{Optimized data analysis runtime by 50\% by introducing SLURM-based parallel job scheduling and concurrency optimization on an HPC cluster.}
+        \resumeItem{Improved workflow for 10 professors and researchers, cutting cycle time by 20\%, by developing interactive protein-to-genome relationship visualization platform using Flask.}
+        \resumeItem{Presented technical findings to audiences of 100+ researchers and interdisciplinary stakeholders.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Machine Learning Research Assistant}{Jan 2024 -- May 2026}
       {Baylor College of Medicine}{Houston, TX}
       \resumeItemListStart
         \resumeItem{Improved brain structure classification efficiency by 100\% by developing a semi-supervised machine learning algorithm using Python scikit-learn.}
@@ -171,17 +181,16 @@
       {Peer Tutor}{Aug 2024 -- May 2025}
       {Rice University}{Houston, TX}
       \resumeItemListStart
-        \resumeItem{Led a team of 50 TAs to organize a campus-wide interactive simulation bringing the A-star algorithm to life, turning it into a hands-on learning experience for students.}
-        \resumeItem{Mentored over 300 students during office hours on concepts including Markov chains, graph search algorithms, and predictive model fitting.}
+        \resumeItem{Led a team of 50 TAs to organize a campus-wide interactive simulation bringing the A-star algorithm to life.}
+        \resumeItem{Mentored over 300 students on concepts including graph search algorithms and predictive model fitting.}
       \resumeItemListEnd
 
     \resumeSubheading
       {Software Engineer}{Jan 2024 -- Apr 2024}
       {American Medical Women's Association}{Houston, TX}
       \resumeItemListStart
-        \resumeItem{Optimized physician lookup times by 20\% by implementing a server-side database caching system.}  
-        \resumeItem{Developed a personalized recommendation system for healthcare learning modules using HTML, CSS, JavaScript, and database caching to improve user experience.}
-        \resumeItem{Contributed to a platform later featured on Fox 26 Houston and ABC 13, expanding reach to college students nationwide.}
+        \resumeItem{Optimized physician lookup times by 20\% by implementing a server-side database caching system.}
+        \resumeItem{Contributed to a platform later featured on Fox 26 Houston and ABC 13, reaching college students nationwide.}
       \resumeItemListEnd
 
   \resumeSubHeadingListEnd
